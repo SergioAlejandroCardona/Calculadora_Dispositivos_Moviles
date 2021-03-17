@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_calculadora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculadora_operaciones">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <Button
+        android:id="@+id/btnCero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnCero"
+        android:text="0"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <Button
+        android:id="@+id/btnComa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnPunto"
+        android:text=","
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toEndOf="@+id/btnCero"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <Button
+        android:id="@+id/btnIgual"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_operaciones"
+        android:onClick="btnIgual"
+        android:text="="
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <Button
+        android:id="@+id/btnUno"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnUno"
+        android:text="1"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+    <Button
+        android:id="@+id/btnDos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnDos"
+        android:text="2"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+    <Button
+        android:id="@+id/btnTres"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnTres"
+        android:text="3"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_operaciones"
+        android:onClick="Sumar"
+        android:text="+"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+    <Button
+        android:id="@+id/btnCuatro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnCuatro"
+        android:text="4"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <Button
+        android:id="@+id/btnCinco"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnCinco"
+        android:text="5"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <Button
+        android:id="@+id/btnSeis"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnSeis"
+        android:text="6"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_operaciones"
+        android:onClick="Restar"
+        android:text="-"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSeis"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <Button
+        android:id="@+id/btnSiete"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnSiete"
+        android:text="7"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCuatro"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <Button
+        android:id="@+id/btnOcho"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnOcho"
+        android:text="8"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <Button
+        android:id="@+id/btnNueve"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_numeros"
+        android:onClick="btnNueve"
+        android:text="9"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeis"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiplicacion"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <Button
+        android:id="@+id/btnMultiplicacion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_operaciones"
+        android:onClick="Multiplicar"
+        android:text="×"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_operaciones_seg"
+        android:onClick="Borrar"
+        android:text="c"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSiete"
+        app:layout_constraintEnd_toStartOf="@+id/guideline10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline13"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <Button
+        android:id="@+id/btnMasMenos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_operaciones_seg"
+        android:text="+/-"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <Button
+        android:id="@+id/btnPorcentaje"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_operaciones_seg"
+        android:onClick="Porcentaje"
+        android:text="%"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/btn_operaciones"
+        android:onClick="Dividir"
+        android:text="÷"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toTopOf="@+id/guideline13" />
+
+    <TextView
+        android:id="@+id/tvPantalla"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textAlignment="textEnd"
+        android:textColor="@color/letras_btn_calculadora"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
